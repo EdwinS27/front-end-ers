@@ -1,0 +1,43 @@
+<div id="main-sign-card">
+    <div id="optionsLog">
+        <tr>
+            <td>
+                <button class="sign-buttons" id="sign-in-button" (click)=revealLogIn()>
+                    Log In
+                </button>
+            </td>
+            <td>
+                <button class="sign-buttons" id="sign-up-button" (click)=revealSignUp()>
+                    Sign Up
+                </button>
+            </td>
+        </tr>
+    </div>
+    <div id="signup-option">
+        <br>
+        <input [(ngModel)]="this.input.username" class="log-form" type="text" name="username" id="signup-username" placeholder="Username">
+        <br>
+        <input [(ngModel)]="this.input.email" class="log-form" type="email" name="email" id="signup-email" placeholder="Enter your email.">
+        <br>
+        <input [(ngModel)]="this.input.pass" class="log-form" type="password" name="password" id="signup-password" placeholder="Enter Your Password Choice">
+        <br>
+        <input [(ngModel)]="this.input.passVerify" class="log-form" type="password" name="password" id="signup-password-verify" placeholder="Verify Your Password Choice">
+        <br>
+        <input [(ngModel)]="this.input.firstName" class="log-form" type="text" name="firstName" id="signup-first-name" placeholder="Enter your first name.">
+        <br>
+        <input [(ngModel)]="this.input.lastName" class="log-form" type="text" name="lastName" id="signup-last-name" placeholder="Enter your last name.">
+        <br>
+        <button class="option-buttons" id="register-button" (click)="verifyRegister()">Register</button>
+    </div>
+    <div id="login-option">
+        <br>
+        <input [(ngModel)]="this.input.username" class="log-form" type="text" name="username" id="login-username" placeholder="Username">
+        <br>
+        <input [(ngModel)]="this.input.pass" class="log-form" type="password" name="password" id="login-password" placeholder="Password">
+        <br>
+        <button class="option-buttons" id="login-button" (click)="verifyLogin()">Log In</button>
+    </div>
+    <div id="clickedOptions">
+        <button class="option-buttons"  (click)="return()">Go Back</button>
+    </div>
+</div>

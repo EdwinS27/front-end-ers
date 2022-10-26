@@ -1,0 +1,50 @@
+#main-sign-card {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-buttons {
+    border-radius: 10%;
+    min-height: 100px;
+    min-width: 250px;
+    padding: 10% 20%;
+    font-size: 25px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.option-buttons{
+    border-radius: 10%;
+    min-height: 50px;
+    min-width: 75px;
+    padding: 5% 10%;
+    font-size: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#optionsLog{
+    visibility: visible;
+    display: block;
+}
+
+#clickedOptions{
+    display: none;
+    visibility: hidden;
+}
+
+#signup-option{
+    display: none;
+    visibility: hidden;
+}
+
+#login-option{
+    display: none;
+    visibility: hidden;
+}
+
+.log-form{
+    margin: 2%;
+    padding: 2%;
+    min-height: 25px;
+    min-width: 250px;
+}
